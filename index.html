@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Companionship: Elderly Social Isolation Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Echoes of Companionship</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#video" class="nav-link">Overview</a></li>
+                <li><a href="#summary" class="nav-link">Summary</a></li>
+                <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/logo.png" alt="Project Logo" class="hero-logo" style="max-width:180px;display:block;margin:0 auto 24px auto;">
+            <h1 class="hero-title">Echoes of Companionship</h1>
+            <p class="hero-subtitle">Advancing Proactive Elderly Social Isolation Detection through IoT and AI</p>
+            <div class="scroll-indicator">
+                <a href="#video" style="text-decoration:none;color:inherit;">
+                    <i class="fas fa-chevron-down"></i>
+                    <span>Scroll to explore</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section id="video" class="section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="video-container">
+                <video controls class="demo-video">
+                    <source src="images/project-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Summary Section -->
+    <section id="summary" class="section">
+        <div class="container">
+            <h2 class="section-title">Project Summary</h2>
+            <div class="summary-content">
+                <div class="summary-text">
+                    <h3>The Problem</h3>
+                    <p>Social isolation among elderly individuals in India represents a critical yet often hidden health crisis affecting millions. Traditional monitoring systems focus only on physical emergencies like falls, missing the subtle behavioral changes that indicate social withdrawal. This reactive approach fails to address the gradual decline in social engagement that can lead to depression, cognitive decline, and other serious health complications.</p>
+                    
+                    <p>Current solutions are either too intrusive (cameras, voice recorders) or too limited (fall detection only), creating a significant gap in proactive mental health monitoring for the elderly population.</p>
+                    
+                    <h3>Our Solution</h3>
+                    <p><strong>Echoes of Companionship</strong> is a privacy-first AI system that proactively detects social isolation through non-intrusive ambient sensors. Using advanced AI techniques including Multi-modal Fusion, Time-Series Anomaly Detection, and Causal Inference, the system learns each individual's unique behavioral patterns and identifies subtle deviations that signal social withdrawal.</p>
+                    
+                    <p>The system employs a <strong>privacy-first design</strong> using non-recording microphones, motion sensors, and smart device logs that never capture personal conversations or images. All raw data is processed locally on ESP32 microcontrollers within the home, ensuring sensitive information never leaves the premises.</p>
+                    
+                    <p>Our <strong>personalized baseline approach</strong> allows the AI to learn each individual's unique behavioral patterns, avoiding false alarms that would occur with generic standards. The system provides <strong>proactive alerts</strong> by detecting social withdrawal trends early, before they become severe health issues, and delivers <strong>actionable insights</strong> to caregivers with specific recommendations for gentle interventions.</p>
+                    
+                    <p>The system provides caregivers with timely, actionable insights, enabling early intervention through gentle nudges before social isolation becomes severe. By focusing on psychological well-being rather than just physical safety, we offer a more compassionate and effective approach to elderly care that respects privacy while ensuring no one suffers in silence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Diagram Section -->
+    <section id="architecture" class="section">
+        <div class="container">
+            <h2 class="section-title">Architecture Diagram</h2>
+            <div class="diagram-container">
+                <div class="diagram-placeholder">
+                <img src="images/archi-diagram.png" alt="Technology Stack Overview" class="tech-overview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="section">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-description">
+                <p>Our comprehensive technology stack combines cutting-edge software frameworks with carefully selected hardware components to deliver a privacy-first, AI-powered monitoring solution.</p>
+            </div>
+            
+            <div class="tech-diagram">
+                <img src="images/techstack-diagram.png" alt="Technology Stack Overview" class="tech-overview">
+            </div>
+            
+            <h3 class="tech-category">Hardware Components</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <img src="images/esp32-logo.png" alt="ESP32" class="tech-logo">
+                    <h3>ESP32 Microcontroller</h3>
+                    <p>Edge Computing & Local Processing</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/pir-sensor.png" alt="PIR Motion Sensor" class="tech-logo">
+                    <h3>PIR Motion Sensor</h3>
+                    <p>Movement Detection</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/sound-sensor.png" alt="Sound Sensor" class="tech-logo">
+                    <h3>Sound Sensor Module</h3>
+                    <p>Ambient Audio Analysis</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/contact-sensor.png" alt="Contact Sensor" class="tech-logo">
+                    <h3>Door/Window Sensor</h3>
+                    <p>Entry/Exit Monitoring</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/light-sensor.png" alt="Light Sensor" class="tech-logo">
+                    <h3>Light Sensor</h3>
+                    <p>Ambient Light Detection</p>
+                </div>
+            </div>
+            
+            <h3 class="tech-category">Software Technologies</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <img src="images/python-logo.png" alt="Python" class="tech-logo">
+                    <h3>Python</h3>
+                    <p>AI & Analytics Development</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/tensorflow-logo.png" alt="TensorFlow" class="tech-logo">
+                    <h3>TensorFlow</h3>
+                    <p>Machine Learning Framework</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/pytorch-logo.png" alt="PyTorch" class="tech-logo">
+                    <h3>PyTorch</h3>
+                    <p>Deep Learning Framework</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/flutter-logo.png" alt="Flutter" class="tech-logo">
+                    <h3>Flutter</h3>
+                    <p>Cross-platform Mobile App</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/firebase-logo.png" alt="Firebase" class="tech-logo">
+                    <h3>Firebase</h3>
+                    <p>Backend & Database</p>
+                </div>
+                <div class="tech-item">
+                    <img src="images/react-logo.png" alt="React" class="tech-logo">
+                    <h3>React</h3>
+                    <p>Web Dashboard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div>
+                <div class="team-member" style="margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto;">
+                    <h3>Amirthavarshini R U</h3>
+                    <p>Passionate Computer Science student with hands-on experience in full-stack development, IoT integration, and data analytics and about leveraging AI and IoT for social good and/p>
+                    <p>Connect:
+                        <a href="https://www.linkedin.com/in/amirthavarshini-r-u-34717b2a2" target="_blank">LinkedIn</a> |
+                        <a href="https://github.com/Amirthavarshini05" target="_blank">GitHub</a>
+                    </p>
+                </div>
+                <div class="team-member" style="margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto;">
+                    <h3>Chandni M N</h3>
+                    <p>I'm a digital cartographer, mapping out solutions to the unsolved problems I find. My passion for machine learning is a toolkit for turning challenges into elegant, intelligent systems that learn and adapt.</p>
+                    <p>Connect:
+                        <a href="https://www.linkedin.com/in/chandni-m-n-9295b52a2" target="_blank">LinkedIn</a> |
+                        <a href="https://github.com/Chandni59" target="_blank">GitHub</a>
+                    </p>
+                </div>
+                <div class="team-member" style="margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto;">
+                    <h3>bhuvaneshwari K</h3>
+                    <p>I build smart web applications with real-time features and seamless user flow.
+Passionate about creating intelligent systems using data and automation.
+Experienced in developing connected devices for smarter monitoring solutions.
+I enjoy building chatbots that combine logic, learning, and live information</p>
+                    <p>Connect:
+                        <a href="https://www.linkedin.com/in/bhuvaneshwari-k-9a417b2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+                        <a href="https://github.com/Bhuvaneshwarikandeepan" target="_blank">GitHub</a>
+                    </p>
+                </div>
+                <div class="team-member" style="margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto;">
+                    <h3>Arul Jothi P</h3>
+                    <p>Curious mind with a builder's spirit — I love turning ideas into practical tech projects that solve everyday problems.</p>
+                    <p>Connect:
+                        <a href="https://www.linkedin.com/in/arul-jothi-255783294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+                        <a href="https://github.com/aruljothi19" target="_blank">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Echoes of Companionship. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
